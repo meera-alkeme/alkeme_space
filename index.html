@@ -35,7 +35,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-cta:hover{background:var(--coral);border-color:var(--coral)}
 
 /* HERO */
-#hero{min-height:100vh;padding-top:72px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:var(--off-white);border-bottom:1.5px solid var(--black)}
+#hero{min-height:100vh;padding-top:120px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:var(--off-white);border-bottom:1.5px solid var(--black)}
 .hero-shapes{position:absolute;inset:0;pointer-events:none}
 .shape-blob-coral{position:absolute;width:480px;height:480px;background:var(--coral);border-radius:50% 50% 50% 30% / 50% 30% 50% 50%;top:8%;right:8%;opacity:0.9}
 .shape-blob-lav{position:absolute;width:260px;height:260px;background:var(--lavender);border-radius:50%;top:22%;right:28%;opacity:1}
@@ -74,8 +74,6 @@ section{padding:7rem 3.5rem}
 .services-grid{display:grid;grid-template-columns:repeat(2,1fr);border:1.5px solid var(--black)}
 .svc{padding:2.75rem;border:0.75px solid var(--black);transition:background 0.2s;position:relative;overflow:hidden}
 .svc:hover{background:var(--black);color:var(--off-white)}
-.svc:hover .svc-num,.svc:hover .svc-name,.svc:hover .svc-desc{color:var(--off-white)}
-.svc:hover .svc-tag{background:var(--coral);color:var(--white);border-color:var(--coral)}
 .svc-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;color:var(--coral);margin-bottom:1.5rem}
 .svc-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.55rem;font-weight:800;letter-spacing:-0.02em;color:var(--black);margin-bottom:0.85rem;line-height:1.15}
 .svc-desc{font-size:0.88rem;color:var(--mid-gray);line-height:1.85;max-width:380px}
@@ -87,124 +85,63 @@ section{padding:7rem 3.5rem}
 #about .section-title{color:var(--off-white)}
 .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;margin-top:3.5rem}
 .about-copy p{font-size:0.97rem;color:rgba(245,243,238,0.65);line-height:1.9;margin-bottom:1.4rem;max-width:480px}
-.about-copy p strong{color:var(--off-white);font-weight:500}
 .about-copy p.big{font-size:1.15rem;color:var(--off-white);font-weight:400;line-height:1.75}
 .about-visual-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
 .about-card{padding:2rem;border:1px solid rgba(245,243,238,0.15)}
 .about-card.highlight{background:var(--coral);border-color:var(--coral)}
 .about-card-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:2.75rem;font-weight:800;letter-spacing:-0.04em;line-height:1;color:var(--off-white);margin-bottom:0.5rem}
-.about-card.highlight .about-card-num{color:var(--white)}
 .about-card-label{font-size:0.8rem;color:rgba(245,243,238,0.5);line-height:1.5}
-.about-card.highlight .about-card-label{color:rgba(255,255,255,0.75)}
 .about-card.tall{grid-column:1/-1;background:rgba(245,243,238,0.05);padding:2rem}
 .about-card.tall .quote-text{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.25rem;font-weight:600;letter-spacing:-0.02em;color:var(--off-white);line-height:1.4}
-.about-card.tall .quote-attr{font-size:0.75rem;color:rgba(245,243,238,0.35);margin-top:0.75rem;letter-spacing:0.1em;text-transform:uppercase}
 .founder-tag{display:inline-flex;align-items:center;gap:0.6rem;background:var(--yellow);color:var(--black);padding:0.6rem 1.1rem;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-top:2rem}
-.founder-dot{width:8px;height:8px;border-radius:50%;background:var(--black)}
 
 /* HOW */
 #how{background:var(--lavender);border-bottom:1.5px solid var(--black)}
-#how .section-title{color:var(--black)}
 .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:4rem;border:1.5px solid var(--black)}
 .how-step{padding:2.5rem;border-right:1px solid var(--black);transition:background 0.2s}
 .how-step:last-child{border-right:none}
-.how-step:hover{background:var(--black)}
-.how-step:hover .how-step-title,.how-step:hover .how-step-desc,.how-step:hover .how-step-num{color:var(--off-white)}
+.how-step:hover{background:var(--black);color:var(--white)}
 .how-step-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.2em;color:var(--black);opacity:0.4;margin-bottom:1.5rem}
-.how-step-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.01em;color:var(--black);margin-bottom:0.75rem}
-.how-step-desc{font-size:0.88rem;color:rgba(15,15,15,0.65);line-height:1.85}
-
-/* WHO */
-#who{background:var(--off-white);border-bottom:1.5px solid var(--black)}
-.who-inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;margin-top:3.5rem}
-.who-list{list-style:none;margin-top:2rem;display:flex;flex-direction:column;gap:0}
-.who-list li{display:flex;align-items:center;gap:1rem;font-size:0.95rem;font-weight:400;color:var(--black);padding:1.1rem 0;border-bottom:1px solid var(--light-gray)}
-.who-dot{width:8px;height:8px;border-radius:50%;background:var(--coral);flex-shrink:0}
-.who-big-text{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(3rem,6vw,5.5rem);font-weight:800;letter-spacing:-0.025em;line-height:1.05;color:var(--black)}
-.who-big-text .line-mint{color:var(--black);-webkit-text-stroke:2px var(--black);-webkit-text-fill-color:transparent}
-.who-big-cta{margin-top:2.5rem}
-.who-sub{font-size:0.9rem;color:var(--mid-gray);margin-top:1.25rem;max-width:360px;line-height:1.8}
+.how-step-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.01em;margin-bottom:0.75rem}
+.how-step-desc{font-size:0.88rem;line-height:1.85}
 
 /* STATS BAND */
 #stats{background:var(--coral);border-bottom:1.5px solid var(--black);padding:5rem 3.5rem}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1.5px solid rgba(255,255,255,0.3)}
 .stat-item{padding:2.5rem 2rem;border-right:1px solid rgba(255,255,255,0.3);text-align:left}
 .stat-item:last-child{border-right:none}
-.stat-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2.5rem,4vw,3.5rem);font-weight:800;letter-spacing:-0.04em;color:var(--white);line-height:1;margin-bottom:0.4rem}
-.stat-label{font-size:0.82rem;color:rgba(255,255,255,0.7);line-height:1.55}
-
-/* FAQ */
-#faq{background:var(--off-white);border-bottom:1.5px solid var(--black)}
-.faq-inner{display:grid;grid-template-columns:1fr 2fr;gap:6rem;align-items:start;margin-top:3rem}
-.faq-list{display:flex;flex-direction:column;gap:0}
-.faq-item{border-bottom:1px solid var(--light-gray)}
-.faq-q{font-family:'Plus Jakarta Sans',sans-serif;font-size:0.95rem;font-weight:700;letter-spacing:-0.01em;color:var(--black);padding:1.35rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;gap:1rem}
-.faq-arrow{font-size:1.1rem;transition:transform 0.2s;flex-shrink:0;font-weight:400}
-.faq-a{display:none;font-size:0.88rem;color:var(--mid-gray);line-height:1.85;padding-bottom:1.35rem}
-.faq-item.open .faq-arrow{transform:rotate(45deg)}
-.faq-item.open .faq-a{display:block}
-
-/* CTA SECTION */
-#cta{background:var(--black);color:var(--off-white);text-align:center;padding:8rem 3.5rem}
-#cta .section-label{color:rgba(245,243,238,0.35)}
-.cta-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2.8rem,6vw,6rem);font-weight:800;letter-spacing:-0.02em;line-height:1.05;color:var(--off-white);max-width:800px;margin:1rem auto 2rem}
-.cta-title .accent{color:var(--coral)}
-.cta-sub{font-size:1rem;color:rgba(245,243,238,0.5);max-width:420px;margin:0 auto 3rem;line-height:1.8}
-.btn-cta{font-family:'Plus Jakarta Sans',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--black);background:var(--yellow);padding:1.1rem 2.5rem;text-decoration:none;border:1.5px solid var(--yellow);transition:background 0.2s,color 0.2s;display:inline-block}
-.btn-cta:hover{background:var(--coral);border-color:var(--coral);color:var(--white)}
-
-/* FOOTER */
-footer{background:var(--off-white);padding:2.5rem 3.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;border-top:1.5px solid var(--black)}
-.footer-logo{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:800;letter-spacing:-0.01em;color:var(--black);text-decoration:none}
-.footer-links{display:flex;gap:2rem;list-style:none}
-.footer-links a{font-size:0.72rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--mid-gray);text-decoration:none;transition:color 0.2s}
-.footer-links a:hover{color:var(--black)}
-.footer-copy{font-size:0.7rem;color:rgba(15,15,15,0.3);letter-spacing:0.06em}
-
-/* ANIMATIONS */
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-.fade-up{animation:fadeUp 0.7s cubic-bezier(0.22,1,0.36,1) both}
-.d1{animation-delay:0.1s}.d2{animation-delay:0.2s}.d3{animation-delay:0.3s}.d4{animation-delay:0.4s}
+.stat-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2.5rem,4vw,3.5rem);font-weight:800;color:var(--white);line-height:1}
 
 /* RESPONSIVE */
 @media(max-width:900px){
   nav{padding:1rem 1.25rem}
   .nav-links{display:none}
   section{padding:4rem 1.25rem}
-  #hero{padding:0}
+  #hero{padding-top:100px}
   .hero-content{padding:0 1.25rem 3rem}
   h1{font-size:clamp(3rem,14vw,5rem)}
-  .shape-blob-coral{width:280px;height:280px;right:-20px}
-  .shape-blob-lav{width:160px;height:160px}
-  .hero-bottom{flex-direction:column;align-items:flex-start}
-  .services-top{flex-direction:column}
   .services-grid{grid-template-columns:1fr}
   .about-inner{grid-template-columns:1fr;gap:2.5rem}
   .how-grid{grid-template-columns:1fr}
   .how-step{border-right:none;border-bottom:1px solid var(--black)}
-  .who-inner{grid-template-columns:1fr}
   .stats-grid{grid-template-columns:1fr 1fr}
   .stat-item:nth-child(2){border-right:none}
-  .faq-inner{grid-template-columns:1fr}
   footer{flex-direction:column;align-items:flex-start;padding:2rem 1.25rem}
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">Alkeme Space</a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#who">Who We Serve</a></li>
+    <li><a href="#how">Approach</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
-<a href="https://calendly.com/alkeme-meera/45mins" class="nav-cta" target="_blank" rel="noopener">Work With Us</a>
-
-<!-- HERO -->
-<section id="hero">
+  <a href="https://calendly.com/alkeme-meera/45mins" class="nav-cta" target="_blank" rel="noopener">Work With Us</a>
+</nav> <section id="hero">
   <div class="hero-shapes" aria-hidden="true">
     <div class="shape-blob-coral"></div>
     <div class="shape-blob-lav"></div>
@@ -224,17 +161,8 @@ footer{background:var(--off-white);padding:2.5rem 3.5rem;display:flex;align-item
   </div>
 </section>
 
-<!-- TICKER -->
 <div class="ticker-wrap" aria-hidden="true">
   <div class="ticker">
-    <span class="ticker-item">Content Strategy</span><span class="ticker-item star">★</span>
-    <span class="ticker-item">Brand Positioning</span><span class="ticker-item star">★</span>
-    <span class="ticker-item">Social Media</span><span class="ticker-item star">★</span>
-    <span class="ticker-item">Founder Brands</span><span class="ticker-item star">★</span>
-    <span class="ticker-item">AI-Powered Workflows</span><span class="ticker-item star">★</span>
-    <span class="ticker-item">Email Marketing</span><span class="ticker-item star">★</span>
-    <span class="ticker-item">Women's Health + Wellness</span><span class="ticker-item star">★</span>
-    <span class="ticker-item">Beauty Industry</span><span class="ticker-item star">★</span>
     <span class="ticker-item">Content Strategy</span><span class="ticker-item star">★</span>
     <span class="ticker-item">Brand Positioning</span><span class="ticker-item star">★</span>
     <span class="ticker-item">Social Media</span><span class="ticker-item star">★</span>
@@ -246,206 +174,104 @@ footer{background:var(--off-white);padding:2.5rem 3.5rem;display:flex;align-item
   </div>
 </div>
 
-<!-- SERVICES -->
 <section id="services">
   <div class="services-top">
     <div>
       <p class="section-label">What We Do</p>
       <h2 class="section-title">Full-stack<br><span class="accent">marketing.</span></h2>
     </div>
-    <p class="services-tagline">We specialize in brands women trust — beauty, wellness, postpartum, women's health. Every service is rooted in deep category knowledge, not generic playbooks.</p>
+    <p class="services-tagline">We specialize in brands women trust — beauty, wellness, postpartum, women's health. Every service is rooted in deep category knowledge.</p>
   </div>
   <div class="services-grid">
     <div class="svc">
       <div class="svc-num">01 — SOCIAL + CONTENT</div>
-      <h3 class="svc-name">Content Strategy &amp; Social Media</h3>
-      <p class="svc-desc">Platform-native strategy built for the way women actually consume content. We handle the ideas, the trends, the execution — so your brand shows up with intention, every single time.</p>
-      <span class="svc-tag">Instagram · LinkedIn · TikTok · X</span>
+      <h3 class="svc-name">Content Strategy & Social Media</h3>
+      <p class="svc-desc">Platform-native strategy built for the way women actually consume content. We handle the execution so your brand shows up with intention.</p>
+      <span class="svc-tag">Instagram · LinkedIn · TikTok</span>
     </div>
     <div class="svc">
       <div class="svc-num">02 — PERSONAL BRAND</div>
-      <h3 class="svc-name">Founder &amp; Personal Brand</h3>
-      <p class="svc-desc">For the visionary who is the brand. We develop the narrative architecture, voice, and content ecosystem that turns lived experience into magnetic thought leadership.</p>
+      <h3 class="svc-name">Founder & Personal Brand</h3>
+      <p class="svc-desc">For the visionary who is the brand. We develop the narrative architecture that turns lived experience into magnetic leadership.</p>
       <span class="svc-tag">Positioning · LinkedIn · Speaking</span>
-    </div>
-    <div class="svc">
-      <div class="svc-num">03 — BRAND STRATEGY</div>
-      <h3 class="svc-name">Brand Positioning &amp; Messaging</h3>
-      <p class="svc-desc">Before content, the foundation has to be right. We build or sharpen your brand identity — category positioning, messaging framework, tone of voice — so everything that follows has roots.</p>
-      <span class="svc-tag">Messaging · Voice · Story</span>
-    </div>
-    <div class="svc">
-      <div class="svc-num">04 — EMAIL + COMMUNITY</div>
-      <h3 class="svc-name">Email &amp; Community Growth</h3>
-      <p class="svc-desc">Your list is your most durable asset. We design email programs that build real relationships — from welcome sequences to newsletters — built to convert without feeling like marketing.</p>
-      <span class="svc-tag">Kit · Flows · Segmentation</span>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <p class="section-label">The Studio</p>
   <h2 class="section-title">Marketing that knows<br>this world <span class="accent">from the inside.</span></h2>
   <div class="about-inner">
     <div class="about-copy">
-      <p class="big">I'm Meera — founder of Alkeme Space. Before building this studio, I spent over a decade inside the beauty and women's health world, understanding what moves the women who buy from these brands.</p>
-      <p>Alkeme Space is built for brands that need more than posts and campaigns. We bring <strong>strategic depth, category intuition, and AI-powered efficiency</strong> to founders who are ready to build something that lasts.</p>
-      <p>This isn't a commodity service. It's a creative partnership — human-led strategy, enhanced by the most powerful AI tools available, all in service of your brand's truest expression.</p>
-      <div class="founder-tag"><div class="founder-dot"></div>Meera, Founder &amp; Creative Director</div>
+      <p class="big">I'm Meera — founder of Alkeme Space. Before building this studio, I spent over a decade inside the beauty world.</p>
+      <p>Alkeme Space is built for brands that need more than posts. We bring <strong>strategic depth</strong> to founders who are ready to build something that lasts.</p>
+      <div class="founder-tag">Meera, Founder & Creative Director</div>
     </div>
     <div>
       <div class="about-visual-grid">
         <div class="about-card highlight">
           <div class="about-card-num">10+</div>
-          <div class="about-card-label">Years in beauty &amp; women's wellness</div>
+          <div class="about-card-label">Years in beauty & wellness</div>
         </div>
         <div class="about-card">
           <div class="about-card-num">100%</div>
-          <div class="about-card-label">Human strategy — AI-optimized execution</div>
+          <div class="about-card-label">Human strategy — AI optimization</div>
         </div>
-        <div class="about-card tall">
-          <div class="quote-text">"We don't just implement — we innovate. Your brand works better with the right strategic partner."</div>
-          <div class="quote-attr">Alkeme Space Philosophy</div>
-        </div>
-      </div>
-    </div>
       </div>
     </div>
   </div>
-</section>
-
-<!-- HOW WE WORK -->
-<section id="how">
+</section> <section id="how">
   <p class="section-label">Our Approach</p>
   <h2 class="section-title">Human intelligence.<br><span class="accent">AI capability.</span></h2>
   <div class="how-grid">
     <div class="how-step">
       <div class="how-step-num">STEP 01</div>
       <h3 class="how-step-title">Deep Brand Immersion</h3>
-      <p class="how-step-desc">We start with understanding — your brand's soul, your audience's inner life, your category's unspoken rules. No templates. No shortcuts. This is where the real work begins.</p>
+      <p class="how-step-desc">We start with understanding your brand's soul. No templates. No shortcuts.</p>
     </div>
     <div class="how-step">
       <div class="how-step-num">STEP 02</div>
       <h3 class="how-step-title">AI-Augmented Strategy</h3>
-      <p class="how-step-desc">We use the most powerful AI tools available to build systems, surface insights, and accelerate production — always in service of a strategy that was human-crafted first.</p>
+      <p class="how-step-desc">We use AI to accelerate production — always in service of a human-crafted strategy.</p>
     </div>
     <div class="how-step">
       <div class="how-step-num">STEP 03</div>
       <h3 class="how-step-title">Execution with Taste</h3>
-      <p class="how-step-desc">Content, campaigns, and community — delivered on time, on brand, built to compound. We obsess over the quality of everything that carries your name into the world.</p>
+      <p class="how-step-desc">Content, campaigns, and community delivered on time and built to compound.</p>
     </div>
   </div>
 </section>
 
-<!-- WHO WE SERVE -->
-<section id="who">
-  <p class="section-label">Who We Serve</p>
-  <div class="who-inner">
-    <div>
-      <h2 class="section-title">Built for<br>brands<br><span class="accent">women love.</span></h2>
-      <p class="who-sub">We work best with purpose-driven founders and brands at the intersection of beauty, wellness, and women's health — at any stage of growth.</p>
-      <div class="who-big-cta">
-        <a href="#cta" class="btn-primary">See if we're a fit</a>
-      </div>
-    </div>
-    <div>
-      <ul class="who-list">
-        <li><div class="who-dot"></div>Beauty &amp; skincare brands (indie to scaling)</li>
-        <li><div class="who-dot"></div>Women's health &amp; wellness companies</li>
-        <li><div class="who-dot"></div>Postpartum, maternal &amp; perinatal care brands</li>
-        <li><div class="who-dot"></div>Ayurvedic, herbal &amp; functional wellness</li>
-        <li><div class="who-dot"></div>Founder-led CPG brands in growth mode</li>
-        <li><div class="who-dot"></div>Visionary founders building personal brands</li>
-        <li><div class="who-dot"></div>AI-native startups in health &amp; wellness</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- STATS BAND -->
 <section id="stats">
   <div class="stats-grid">
     <div class="stat-item">
       <div class="stat-num">10+</div>
-      <div class="stat-label">Years deep in beauty &amp;<br>women's wellness</div>
+      <div class="stat-label">Years in beauty & wellness</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">2×</div>
-      <div class="stat-label">Faster delivery through<br>AI-powered workflows</div>
+      <div class="stat-label">Faster delivery through AI</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">100%</div>
-      <div class="stat-label">Human strategy behind<br>every deliverable</div>
+      <div class="stat-label">Human strategy behind every deliverable</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">∞</div>
-      <div class="stat-label">Content systems built<br>to compound over time</div>
+      <div class="stat-label">Content systems built to compound</div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section id="faq">
-  <div class="faq-inner">
-    <div>
-      <p class="section-label">FAQ</p>
-      <h2 class="section-title">Questions?<br><span class="accent">We got you.</span></h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item open">
-        <div class="faq-q">What kinds of brands do you work with? <span class="faq-arrow">+</span></div>
-        <div class="faq-a">We specialize in beauty, skincare, women's health, wellness, and postpartum care brands — from indie founders to scaling CPG companies. If your brand was built for women and rooted in purpose, we're probably a fit.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">What makes Alkeme Space different? <span class="faq-arrow">+</span></div>
-        <div class="faq-a">Most agencies apply generic playbooks. We bring over a decade of lived category experience in beauty and women's wellness — we know your customer, your competitors, and your cultural context. We also layer AI workflows on top of that expertise, so you get senior-level strategy at a pace that would otherwise require a full team.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">How does the AI piece work? <span class="faq-arrow">+</span></div>
-        <div class="faq-a">AI is our force multiplier — never our replacement for craft. Strategy, brand voice, creative direction, and judgment are always human. We use AI tools to move faster, stay consistent, and build systems that scale — without compromising quality or character.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Do you offer retainers or project-based work? <span class="faq-arrow">+</span></div>
-        <div class="faq-a">Both. We have monthly retainer options for ongoing strategy and execution, and focused project engagements for brand positioning, launch campaigns, or content system builds. We'll match the right structure to where you are.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">How quickly will we see results? <span class="faq-arrow">+</span></div>
-        <div class="faq-a">Most clients see meaningful traction within 60–90 days. We set clear benchmarks up front and provide transparent reporting throughout — so you're never guessing about what's working.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
 <section id="cta">
-  <p class="section-label">Ready to Begin</p>
-  <h2 class="cta-title">Never worry about<br>your marketing <span class="accent">again.</span></h2>
-  <p class="cta-sub">Let's talk about what you're building — and how we help it reach the women it was made for.</p>
+  <h2 class="cta-title">Never worry about your marketing <span class="accent">again.</span></h2>
   <a href="mailto:meera@alkeme.space" class="btn-cta">Let's Have a Chat</a>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <a href="#" class="footer-logo">Alkeme Space</a>
-  <ul class="footer-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#who">Who We Serve</a></li>
-    <li><a href="mailto:meera@alkeme.space">Contact</a></li>
-  </ul>
   <p class="footer-copy">© 2026 Alkeme Space. All rights reserved.</p>
 </footer>
 
-<script>
-document.querySelectorAll('.faq-q').forEach(q=>{
-  q.addEventListener('click',()=>{
-    const item=q.parentElement;
-    const wasOpen=item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-    if(!wasOpen)item.classList.add('open');
-  });
-});
-</script>
 </body>
 </html>
